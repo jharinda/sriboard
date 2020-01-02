@@ -1,6 +1,6 @@
 <html>
     <head>
-          SriBoard
+        <title>SriBoard</title>
     </head>
   <body>
         Hello Guys !!
