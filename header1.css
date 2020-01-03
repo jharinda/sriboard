@@ -12,12 +12,26 @@
   background-color:#101010;
   vertical-align: middle;
 }
-#logo{
+#logoimage{
   width:65px;
-
   vertical-align: middle;
+  margin-left: 20px;
+  margin-top:7px;
+  display: inline;
 
 }
-.logo{
+.logowithname{
   vertical-align: middle;
+  display: table-cell;
+  float: left;
+}
+.navigation li{
+  display: inline;
+  padding:50px;
+  color: white;
+  font-size:20px;
+
+  display: table-cell;
+  vertical-align: middle;
+
 }
