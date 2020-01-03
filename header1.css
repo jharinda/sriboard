@@ -10,5 +10,14 @@
   height:80px;
   display: block;
   background-color:#101010;
+  vertical-align: middle;
+}
+#logo{
+  width:65px;
 
+  vertical-align: middle;
+
+}
+.logo{
+  vertical-align: middle;
 }
