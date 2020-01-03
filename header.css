@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  /*padding: 0;*/
+  list-style: none;
+  text-decoration: none;
+}
+
+
+#logo{
+  height: 50px;
+  width: 50px;
+}
+tr{
+  height: 70px;
+}
+#SriBoard{
+  font-size:50px;
+  color: white;
+  padding: 10px;
+  vertical-align: middle;
+}
+ table{
+
+   background-color: black;
+   margin-left: -10px;
+   margin-top: -10px;
+   margin-right: 0;
+   padding: 0;
+ }
+
+ #homele{
+   color: gray;
+   padding: 50px;
+ }
+ #bet{
+/* padding: -10px;*/
+ }
+
+ a{
+   text-decoration: none;
+   color: inherit;
+ }
