@@ -26,16 +26,18 @@
   display: inline;
 
 }
-.mm{
-  padding-top: 25px;
+.Sriname{
+  padding-top: 22px;
   padding-left: 5px;
   color:white;
+  font-size: 30px;
 }
 .navigation li{
   display: inline;
   padding:50px;
   color: white;
   font-size:20px;
+  color:gray;
 }
 .navigation{
   padding-top: 30px;
@@ -43,4 +45,9 @@
 }
 ul{
   margin-left: 100px;
+
+}
+
+li:hover{
+  color:white;
 }
