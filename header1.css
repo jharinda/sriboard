@@ -35,7 +35,8 @@
 
 }
 #sinhalafont{
-    font-family:"FN NILANTHI";
+  /*  font-family:"FN NILANTHI";*/
+    font-family:"FN NILANTHI Normal";
 }
 .navigation li{
   display: inline;
