@@ -31,23 +31,24 @@
   padding-left: 5px;
   color:white;
   font-size: 30px;
+  padding-right:250px;
 }
 .navigation li{
   display: inline;
   padding:50px;
   color: white;
   font-size:20px;
-  color:gray;
+
 }
-.navigation{
+a.navtabs{
+  color: gray;
+}
+.navigation ul{
   padding-top: 30px;
-
-}
-ul{
-  margin-left: 100px;
-
+  padding-left: 50px;
 }
 
-li:hover{
+
+a:hover{
   color:white;
 }
