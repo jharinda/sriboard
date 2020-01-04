@@ -36,9 +36,12 @@
 }
 #sinhalafont{
    font-family:"FN NILANTHI";
-    
     font-size:40px;
 }
+#bordfont{
+  font-family: "Albertus"
+}
+
 .navigation li{
   display: inline;
   padding:50px;
