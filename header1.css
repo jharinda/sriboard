@@ -36,11 +36,11 @@
   padding:50px;
   color: white;
   font-size:20px;
-
-  display: table-cell;
-  vertical-align: middle;
-
 }
 .navigation{
-  padding-left: px;
+  padding-top: 30px;
+
+}
+ul{
+  margin-left: 100px;
 }
