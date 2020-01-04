@@ -32,7 +32,10 @@
   color:white;
   font-size: 30px;
   padding-right:250px;
-  font-family:"FN NILANTHI";
+
+}
+#sinhalafont{
+    font-family:"FN NILANTHI";
 }
 .navigation li{
   display: inline;
