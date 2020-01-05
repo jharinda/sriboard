@@ -76,6 +76,7 @@ function playNote(key){
   noteAudio=document.getElementById(key.dataset.note);
   noteAudio.currentTime=0;
   noteAudio.play();
+  noteAudio.volume=document.getElementById("volume").value;
   key.classList.add('active');
   noteAudio.addEventListener('ended',()=>{
     key.classList.remove('active');
@@ -93,9 +94,11 @@ document.addEventListener('keyup',sustain=>{
   }
 });
 
-function changeVolume(){
+/*function changeVolume(){
   noteAudio.volume=document.getElementById("volume").value;
 }
+
+document.addEventListener('click',changeVolume);*/
 
 document.addEventListener('click',changeVolume);
 
