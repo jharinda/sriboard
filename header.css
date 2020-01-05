@@ -1,48 +1,46 @@
-/*{
+*{
   margin:0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-}*/
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+}
+.header{
+  width:100%;
+  height:80px;
+  display: block;
+  background-color:#101010;
+  vertical-align: middle;
+}
+#logoimage{
+  width:280px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top:4px;
+  padding-right: 150px;
+}
+.logowithname li{
+  vertical-align: middle;
+  display: table-cell;
+  float: left;
+  display: inline;
+
+}
+.navigation li{
+  display: inline;
+  padding:50px;
+  color: white;
+  font-size:20px;
+  font-family: "Arial";
+  margin-top:-20px
+}
+a.navtabs{
+  color: gray;
+}
+.navigation ul{
+  padding-bottom: 100px;
+  padding-left: 50px;
+}
 a:hover{
   color:white;
+  transition: all 300ms linear;
 }
-
-
-#logo{
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
-}
-tr{
-  height: 70px;
-}
-#SriBoard{
-  font-size:50px;
-  color: white;
-  padding: 10px;
-  vertical-align: middle;
-}
- table{
-
-   background-color: #101010;
-   margin-left: -10px;
-   margin-top: -10px;
-   margin-right: 0;
-   padding: 0;
-   width: 100%;
- }
-
- #homele{
-   color: gray;
-   padding: 50px;
- }
- #bet{
-/* padding: -10px;*/
- }
-
- a{
-   text-decoration: none;
-   color: inherit;
- }
