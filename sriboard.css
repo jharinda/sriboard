@@ -76,3 +76,18 @@ footer{
 .keyboardoptions{
   display: flex;
 }
+
+.whitekey{
+  padding-left: 40px;
+  padding-top: 240px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.blackkey{
+  color: white;
+  padding-left: 24px;
+  padding-top: 140px;
+  font-size: 20px;
+  font-weight: bold;
+}
