@@ -14,6 +14,8 @@ var d;
 var n;
 var count=0;
 var sustainOn=0;
+var sustaincheckbox=false;
+var showtextcheckbox=true;
 
 keys.forEach(key=>{
   key.addEventListener('click',()=>playNote(key));
@@ -27,23 +29,22 @@ function startRecord(){
 
 function stopRecord(){
   isRecording=0;
-  //document.write(recordNotes);
-  //document.write(delayNotes);
-  //document.write(n);
 }
 
 function playRecord(){
-  while(count<recordNotes.length){
-    const whiteKeyIndex=WHITE_KEYS.indexOf(recordNotes[count]);
-    const blackKeyIndex=BLACK_KEYS.indexOf(recordNotes[count]);
-    if(whiteKeyIndex>-1) {playNote(whiteKeys[whiteKeyIndex])}
-    if(blackKeyIndex>-1) {playNote(blackKeys[blackKeyIndex])}
-    count++;
+  //while(count<recordNotes.length){
+    //const whiteKeyIndex=WHITE_KEYS.indexOf(recordNotes[count]);
+    //const blackKeyIndex=BLACK_KEYS.indexOf(recordNotes[count]);
+    //if(whiteKeyIndex>-1) {playNote(whiteKeys[whiteKeyIndex])}
+    //if(blackKeyIndex>-1) {playNote(blackKeys[blackKeyIndex])}
+    //count++;
     //if (count<delayNotes.length) {
       //setTimeout(playRecord,2000);
     //}
     //setTimeout(test,2000);
-  }
+  //}
+  document.write(recordNotes);
+  document.write(delayNotes);
 }
 
 /*function test(){
@@ -81,10 +82,24 @@ function playNote(key){
   })
 }
 
-/*document.addEventListener('keyup',sustain=>{
-  noteAudio.pause();
-  noteAudio.currentTime=noteAudio.duration;
-  noteAudio.addEventListener('ended',()=>{
-    key.classList.remove('active');
-  })
-});*/
+document.addEventListener('keyup',sustain=>{
+  sustaincheckbox=document.getElementById("sustain");
+  if(sustaincheckbox.checked==false){
+    noteAudio.pause();
+    noteAudio.currentTime=noteAudio.duration;
+    noteAudio.addEventListener('ended',()=>{
+      key.classList.remove('active');
+    })
+  }
+});
+
+function showkeys(){
+  var showtextcheckbox=document.getElementById("showtext");
+  var keytext=document.getElementById("whitekeytext");
+  if (showtextcheckbox.checked==true) {
+    keytext.style.display="block";
+  }
+  else{
+      keytext.style.display="none";
+  }
+}
