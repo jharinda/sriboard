@@ -1,22 +1,17 @@
 img
 {
-  padding: 50px;
-  border-radius: 90px;
-  border-style:outset;
-  border-width: 4px;
-  border-color: red;
-
+  padding: 0px;
+  border-radius: 50px;
 }
 .abcd
 {
 padding-left: 150px;
-padding-top:100px;
-
+padding-top:0px;
+display: flex;
 }
 .first
 {
   width:300px;
-
 }
 .second
 {
@@ -25,4 +20,62 @@ padding-top:100px;
 .third
 {
 width:300px;
+}
+table{
+  width:100px;
+}
+th{
+text-align: center;
+font-family:monospace;
+font-size:34px;
+font-style:italic;
+color:white;
+-webkit-text-stroke-width:0.5px;
+-webkit-text-fill-color:black;
+
+}
+table,th
+{
+  border: 1px solid #000;
+  border: none;
+  border-collapse: collapse;
+  padding-left:279px;
+  padding-top:100px
+}
+.first:hover{
+  opacity: 0.8;
+  width:320px;
+  border-radius: 50px;
+box-shadow: 0px 0px 30px 0px rgba(237, 235, 204, 0.67);
+
+transition: all 500ms linear;
+}
+.second:hover{
+  opacity: 0.8;
+  width:320px;
+  border-radius: 50px;
+box-shadow: 0px 0px 30px 0px rgba(214, 120, 205, 0.67);
+
+transition: all 500ms linear;
+}
+.third:hover{
+  opacity: 0.8;
+  width:320px;
+  border-radius: 50px;
+box-shadow: 0px 0px 30px 0px rgba(173, 172, 71, 0.67);
+
+transition: all 500ms linear;
+}
+.eka{
+  padding-left: 50px;
+}
+.deweni{
+  padding-left: 110px;
+}
+.thuna{
+  padding-left: 120px;
+}
+header
+{
+  height: 100px;
 }
