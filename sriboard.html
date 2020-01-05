@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sriboard</title>
+    <link rel="stylesheet" href="sriboard.css">
+    <link rel="stylesheet" href="header.css">
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+          <div class="logowithname">
+            <li><img src="logo1.jpg" alt="" id="logoimage"></li>
+        <div class="navigation">
+          <ul>
+            <li><a href="home.html" class="navtabs">Grand Piano</a></li>
+            <li><a href="Pizzicato.html" class="navtabs">Pizzicato</a></li>
+            <li><a href="EPiano.html" class="navtabs">E.Piano</a></li>
+            <li><a href="profile.html" class="navtabs">Profile</a></li>
+            <li><a href="logout.html" class="navtabs">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="keyboard">
+      <div class="options">
+        <div class="recordoptions">
+          <img src="buttons/record.png" onclick="startRecord()">
+          <img src="buttons/stop.png" onclick="StopRecord()">
+          <img src="buttons/play.png" onclick="playRecord()">
+          <img src="buttons/save.png" onclick="saveRecord()">
+          <img src="buttons/playsave.png" onclick="playSaveRecordFile()">
+        </div>
+
+        <div class="volumeoptions">
+          <input type="range" name="" min="0" max="100" value="50">
+        </div>
+
+        <div class="keyboardoptions">
+          Sustain<input type="checkbox" id="sustain" checked>
+          <p>Octave Switch</p>
+          -1<input type="radio" name="octave" value="">
+          0<input type="radio" name="octave" value="" checked>
+          +1<input type="radio" name="octave" value="">
+          Show Keys<input type="checkbox" id="showtext" onclick="showkeys()">
+        </div>
+      </div>
+
+      <div class="piano">
+        <div data-note="C5" class="key white"><p id="whitekeytext" style="display:none">Q</p></div>
+        <div data-note="Db5" class="key black"><p class="blackkeytext" style="display:none">2</p></div>
+        <div data-note="D5" class="key white"><p id="whitekeytext" style="display:none">W</p></div>
+        <div data-note="Eb5" class="key black"><p class="blackkeytext" style="display:none">3</p></div>
+        <div data-note="E5" class="key white"><p id="whitekeytext" style="display:none">E</p></div>
+        <div data-note="F5" class="key white"><p id="whitekeytext" style="display:none">R</p></div>
+        <div data-note="Gb5" class="key black"><p class="blackkeytext" style="display:none">5</p></div>
+        <div data-note="G5" class="key white"><p id="whitekeytext" style="display:none">T</p></div>
+        <div data-note="Ab5" class="key black"><p class="blackkeytext" style="display:none">6</p></div>
+        <div data-note="A5" class="key white"><p id="whitekeytext" style="display:none">Y</p></div>
+        <div data-note="Bb5" class="key black"><p class="blackkeytext" style="display:none">7</p></div>
+        <div data-note="B5" class="key white"><p id="whitekeytext" style="display:none">U</p></div>
+        <div data-note="C6" class="key white"><p id="whitekeytext" style="display:none">C</p></div>
+        <div data-note="Db6" class="key black"><p class="blackkeytext" style="display:none">F</p></div>
+        <div data-note="D6" class="key white"><p id="whitekeytext" style="display:none">V</p></div>
+        <div data-note="Eb6" class="key black"><p class="blackkeytext" style="display:none">G</p></div>
+        <div data-note="E6" class="key white"><p id="whitekeytext" style="display:none">B</p></div>
+        <div data-note="F6" class="key white"><p id="whitekeytext" style="display:none">N</p></div>
+        <div data-note="Gb6" class="key black"><p class="blackkeytext" style="display:none">J</p></div>
+        <div data-note="G6" class="key white"><p id="whitekeytext" style="display:none">M</p></div>
+        <div data-note="Ab6" class="key black"><p class="blackkeytext" style="display:none">K</p></div>
+        <div data-note="A6" class="key white"><p id="whitekeytext" style="display:none">,</p></div>
+        <div data-note="Bb6" class="key black"><p class="blackkeytext" style="display:none">L</p></div>
+        <div data-note="B6" class="key white"><p id="whitekeytext" style="display:none">.</p></div>
+        <div data-note="C7" class="key white"><p id="whitekeytext" style="display:none">/</p></div>
+      </div>
+    </div>
+
+    <audio id="C5" src="notes/C5.mp3"></audio>
+    <audio id="Db5" src="notes/Db5.mp3"></audio>
+    <audio id="D5" src="notes/D5.mp3"></audio>
+    <audio id="Eb5" src="notes/Eb5.mp3"></audio>
+    <audio id="E5" src="notes/E5.mp3"></audio>
+    <audio id="F5" src="notes/F5.mp3"></audio>
+    <audio id="Gb5" src="notes/Gb5.mp3"></audio>
+    <audio id="G5" src="notes/G5.mp3"></audio>
+    <audio id="Ab5" src="notes/Ab5.mp3"></audio>
+    <audio id="A5" src="notes/A5.mp3"></audio>
+    <audio id="Bb5" src="notes/Bb5.mp3"></audio>
+    <audio id="B5" src="notes/B5.mp3"></audio>
+    <audio id="C6" src="notes/C6.mp3"></audio>
+    <audio id="Db6" src="notes/Db6.mp3"></audio>
+    <audio id="D6" src="notes/D6.mp3"></audio>
+    <audio id="Eb6" src="notes/Eb6.mp3"></audio>
+    <audio id="E6" src="notes/E6.mp3"></audio>
+    <audio id="F6" src="notes/F6.mp3"></audio>
+    <audio id="Gb6" src="notes/Gb6.mp3"></audio>
+    <audio id="G6" src="notes/G6.mp3"></audio>
+    <audio id="Ab6" src="notes/Ab6.mp3"></audio>
+    <audio id="A6" src="notes/A6.mp3"></audio>
+    <audio id="Bb6" src="notes/Bb6.mp3"></audio>
+    <audio id="B6" src="notes/B6.mp3"></audio>
+    <audio id="C7" src="notes/C7.mp3"></audio>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
