@@ -82,6 +82,7 @@ footer{
   padding-top: 240px;
   font-size: 30px;
   font-weight: bold;
+  display: none;
 }
 
 .blackkey{
@@ -90,4 +91,5 @@ footer{
   padding-top: 140px;
   font-size: 20px;
   font-weight: bold;
+  display: none;
 }
