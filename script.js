@@ -93,6 +93,12 @@ document.addEventListener('keyup',sustain=>{
   }
 });
 
+function changeVolume(){
+  noteAudio.volume=document.getElementById("volume").value;
+}
+
+document.addEventListener('click',changeVolume);
+
 function showkeys(){
   var showtextcheckbox=document.getElementById("showtext");
   var keytext=document.getElementById("whitekeytext");
