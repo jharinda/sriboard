@@ -6,8 +6,9 @@ img
 .abcd
 {
 padding-left: 150px;
-padding-top:0px;
+padding-top:50px;
 display: flex;
+padding-bottom: 50px;
 }
 .first
 {
@@ -40,7 +41,7 @@ table,th
   border: none;
   border-collapse: collapse;
   padding-left:279px;
-  padding-top:100px
+  padding-top:40px;
 }
 .first:hover{
   opacity: 0.8;
@@ -78,4 +79,10 @@ transition: all 500ms linear;
 header
 {
   height: 100px;
+}
+footer{
+  height: 60px;
+}
+.foot{
+padding-top:20px;
 }
