@@ -13,6 +13,7 @@ var delay=0;
 var d;
 var n;
 var count=0;
+var count2=1;
 var sustainOn=0;
 var sustaincheckbox=false;
 var showtextcheckbox=true;
@@ -32,27 +33,27 @@ function stopRecord(){
 }
 
 function playRecord(){
-  //while(count<recordNotes.length){
-    //const whiteKeyIndex=WHITE_KEYS.indexOf(recordNotes[count]);
-    //const blackKeyIndex=BLACK_KEYS.indexOf(recordNotes[count]);
-    //if(whiteKeyIndex>-1) {playNote(whiteKeys[whiteKeyIndex])}
-    //if(blackKeyIndex>-1) {playNote(blackKeys[blackKeyIndex])}
-    //count++;
-    //if (count<delayNotes.length) {
-      //setTimeout(playRecord,2000);
-    //}
-    //setTimeout(test,2000);
+  if (count<recordNotes.length) {
+    const whiteKeyIndex=WHITE_KEYS.indexOf(recordNotes[count]);
+    const blackKeyIndex=BLACK_KEYS.indexOf(recordNotes[count]);
+    if(whiteKeyIndex>-1) {playNote(whiteKeys[whiteKeyIndex])}
+    if(blackKeyIndex>-1) {playNote(blackKeys[blackKeyIndex])}
+    setTimeout(playRecord,delayNotes[count2]);
+    count++;
+    count2++;
+  }
+  //if (count==recordNotes.length) {
+    //count=0;
+    //count2=1;
   //}
-  document.write(recordNotes);
-  document.write(delayNotes);
 }
 
 function saveRecord(){
-  location.replace("saverecord.php");
+  location.replace("saverecord.php?recordNotes="+recordNotes+"&delayNotes="+delayNotes);
 }
 
 function playSaveRecordFile(){
-  location.replace("saverecord.php");
+  location.replace("playsave.php");
 }
 
 /*function test(){
