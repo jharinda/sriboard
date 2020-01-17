@@ -9,6 +9,7 @@
 
   </head>
 
+
     <div class="header">
         <div class="logowithname" >
             <li>
@@ -18,13 +19,13 @@
             </li>
           <div class="navigation">
             <ul>
-              <li><a href="../sriboard/piano.php" class="navtabs">Grand Piano</a></li>
-              <li><a href="../sriboard/pizzicato.php" class="navtabs">Pizzicato</a></li>
-              <li><a href="../sriboard/epiano.php" class="navtabs">E.Piano</a></li>
+              <li><a href="../sriboard/piano.php?octave=0" class="navtabs">Grand Piano</a></li>
+              <li><a href="../sriboard/pizzicato.php?octave=0" class="navtabs">Pizzicato</a></li>
+              <li><a href="../sriboard/epiano.php?octave=0" class="navtabs">E.Piano</a></li>
               <?php
               if (isset($_SESSION['email']))
               {
-                  echo '<li><a href="profile.html" class="navtabs">Profile</a></li>
+                  echo '<li><a href="home.php" class="navtabs">Home</a></li>
                   <li><a href="../signin/signout.php" class="navtabs">Logout</a></li>';
               }else
               {
@@ -32,8 +33,6 @@
               <li><a href="../signin/signin.php" class="navtabs">Login</a></li>
               <li><a href="../signup/signup.php" class="navtabs">Sign Up</a></li>';
               }?>
-
-
             </ul>
       </div>
     </div>
