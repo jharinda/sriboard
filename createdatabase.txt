@@ -1,0 +1,9 @@
+create table users(
+    userid int(5) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    firstname tinytext NOT NULL,
+    lastname tinytext NOT NULL,
+    email tinytext NOT NULL,
+    longtext NOT NULL,
+    recordnotes text,
+    delaynotes text
+);

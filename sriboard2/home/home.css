@@ -1,0 +1,83 @@
+body  {
+  background-image: url("main.jfif");
+  background-size:cover;
+}
+img
+{
+  padding: 0px;
+  border-radius: 50px;
+}
+.abcd
+{
+padding-left: 10%;
+padding-top:50px;
+display: flex;
+padding-bottom: 50px;
+p
+
+}
+#forhover{
+  width:300px;
+  opacity: 0.9;
+
+}
+
+table{
+  width:100px;
+}
+th{
+text-align: center;
+font-family:monospace;
+font-size:34px;
+font-style:italic;
+color:white;
+-webkit-text-stroke-width:0.5px;
+-webkit-text-fill-color:black;
+
+}
+table,th
+{
+  border: 1px solid #000;
+  border: none;
+  border-collapse: collapse;
+  padding-left:279px;
+  padding-top:40px;
+}
+#forhover:not(:hover){
+      transition: 1500ms;
+}
+#forhover:hover{
+  opacity: 1;
+  width:320px;
+  border-radius: 50px;
+  transition: all 500ms linear;
+}
+.first:hover{
+  box-shadow: 0px 0px 30px 5px rgba(237, 235, 204, 1);
+}
+.second:hover{
+  box-shadow: 0px 0px 30px 5px rgba(214, 120, 205, 1);
+}
+.third:hover{
+  box-shadow: 0px 0px 30px 5px rgba(173, 172, 71, 1);
+
+}
+.img1{
+  padding-left: 50px;
+}
+.img2{
+  padding-left: 110px;
+}
+.img3{
+  padding-left: 120px;
+}
+header
+{
+  height: 100px;
+}
+footer{
+  height: 60px;
+}
+.foot{
+padding-top:20px;
+}
