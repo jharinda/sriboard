@@ -1,0 +1,39 @@
+.submitbtn:hover{
+
+  color:white;
+  cursor: pointer;
+  transition: 500ms;
+  background-color: #00bfff;
+  width: 90%;
+
+}
+
+.submitbtn{
+  font-weight: 400;
+
+}
+
+.submitbtn:not(:hover){
+  transition: 600ms;
+}
+#inputid:hover{
+  border-color: #00ff40;
+  transition: 500ms;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  width: 92%;
+
+}
+#inputid:not(:hover){
+  transition: 1000ms;
+}
+a{
+  color: #0040ff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  transition: all 5000ms linear;
+  opacity: 1;
+
+}
